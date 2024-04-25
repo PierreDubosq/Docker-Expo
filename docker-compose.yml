@@ -8,8 +8,10 @@ services:
       "
     env_file:
       - .env
+    tty: true
     ports:
       - 8081:8081
+    stdin_open: true
     volumes:
       - ./assets:/app/assets
       - ./App.js:/app/App.js
